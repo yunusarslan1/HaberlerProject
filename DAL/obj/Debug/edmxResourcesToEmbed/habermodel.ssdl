@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbhaberlerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MainId" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Contents" Type="nvarchar(max)" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ChangeDate" Type="datetime" />
+    <Property Name="PageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="SeoTitle" Type="nvarchar" MaxLength="300" />
+    <Property Name="SeoDesc" Type="nvarchar" MaxLength="300" />
+    <Property Name="SeoKeyword" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="IsMenuActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Galeri">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="LogData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="Contents" Type="nvarchar(max)" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="Types" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Contents" Type="nvarchar(max)" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="GaleriId" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ChangeDate" Type="datetime" />
+    <Property Name="PageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="SeoDesc" Type="nvarchar" MaxLength="400" />
+    <Property Name="SeoTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="SeoKeyword" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ListImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsMenuActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ProductTag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="TagId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Url" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="dbhaberlerModelStoreContainer">
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Galeri" EntityType="Self.Galeri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogData" EntityType="Self.LogData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductTag" EntityType="Self.ProductTag" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tags" EntityType="Self.Tags" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

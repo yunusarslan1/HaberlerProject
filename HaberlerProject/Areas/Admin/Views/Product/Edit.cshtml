@@ -1,0 +1,275 @@
+﻿@model HaberlerProject.Models.ViewModel.ProductVM
+@{
+    ViewBag.Title = "Ürün Ekle";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    var ss = Model;
+}
+<div class="col-md-11">
+    <!--begin::Portlet-->
+    <div class="m-portlet m-portlet--tab">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                    </span>
+                    <h3 class="m-portlet__head-text">
+                        Yeni Ürün Oluştur
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--begin::Form-->
+        @using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right", enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => model.CatId)
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="m-portlet__body">
+            <div class="form-group m-form__group">
+
+                <input class="form-control" type="text" name="CatName" id="CatName" value="@Model.CatName" style="width:95%;float: left;" disabled />
+
+                <input type="button" class="btn btn-warning ChooseCategory" value="Q" />
+
+                @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Name">
+                    Adı
+                </label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control m-input m-input--square", required = "required" })
+
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Description">
+                    Açıklama
+                </label>
+                @Html.TextBoxFor(x => x.Description, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    İçerik
+                </label>
+                @*@Html.TextBoxFor(x => x.Content, new { @class = "form-control m-input m-input--square", required = "required" })*@
+                @Html.TextAreaFor(x => x.Content, new { @class = "summernote" })
+            </div>
+
+
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Seo Başlık
+                </label>
+                @Html.TextBoxFor(x => x.SeoTitle, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Seo Açıklama
+                </label>
+                @Html.TextBoxFor(x => x.SeoDesc, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+
+                <label for="Tags">Etiketler</label>
+                <div class="">
+                    <select class="form-control m-select2" id="SelectedTags" multiple name="SelectedTags"></select>
+                </div>
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Seo KeyWord
+                </label>
+                @Html.TextBoxFor(x => x.SeoKeyword, new { @class = "form-control m-input m-input--square" })
+
+            </div>
+            <div class="form-group m-form__group">
+
+                @Html.EditorFor(x => x.IsActive, new { @class = "form-control m-input m-input--square" })
+                <label for="IsActive">
+                    Aktiflik
+                </label>
+            </div>
+            <div class="form-group m-form__group">
+
+                @Html.EditorFor(x => x.IsSubMenuActive, new { @class = "form-control m-input m-input--square" })
+                <label for="IsSubMenuActive">
+                    AltMenu Aktiflik
+                </label>
+            </div>
+            <div class="form-group m-form__group">
+                <label for="RowNumber">
+                    Sıra No
+                </label>
+                @Html.TextBoxFor(x => x.RowNumber, new { @class = "form-control m-input m-input--square", type = "number" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <div class="col-md-12">
+
+                    <label for="ImageUrl">
+                        Detay Resim
+                    </label><br />
+                    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "", type = "file" })
+                    <img src="@Model.ImageUrl" style="width:100px;" />
+
+
+                </div>
+            </div>
+
+            <div class="form-group m-form__group">
+                <div class="col-md-12">
+
+                    <label for="ImageUrl">
+                        Liste Görseli
+                    </label><br />
+                    @Html.TextBoxFor(x => x.ListImageUrl, new { @class = "", type = "file" })
+                    <img src="@Model.ListImageUrl" style="width:100px;" />
+
+
+                </div>
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Galeri
+                </label>
+
+                <input type="file" class="" name="Galeri" value="" multiple />
+                @foreach (var galeriItem in Model.Galeries)
+                {
+                <a data-toggle="modal" data-target="#m_modal_3" onclick="return modalSetData('@galeriItem.Id','@galeriItem.Url');"  style="font-weight:bold;color:red;">Sil</a> <img src="@galeriItem.Url" alt="Alternate Text" style="width:100px;" />
+                }
+            </div>
+        </div>
+            <div class="m-portlet__foot m-portlet__foot--fit">
+                <div class="m-form__actions">
+                    <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                        Kaydet
+                    </button>
+                    <a href="/Admin/Category/Index" class="btn btn-secondary">
+                        Vazgeç
+                    </a>
+                </div>
+            </div>
+
+        }
+        <div id="ChooseCategoryForm"></div>  <!--end::Form-->
+    </div>
+    <!--end::Portlet-->
+</div>
+<div class="m-portlet">
+    <div class="modal fade" id="m_modal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p id="exampleModalLabel">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Vazgeç
+                    </button>
+                    @using (Html.BeginForm("Delete", "Product", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" id="deleteButton" name="deletedId" />
+                        <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                            Sil
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    
+
+    <script type="text/javascript">
+
+  
+        var modalSetData = function (id, url) {
+            $("#exampleModalLabel").html(' <img src="' + url + '" style="width:100%;"/> bu görseli silmek istiyor musunuz?.');
+            $("#deleteButton").val(id);
+        }
+
+        $('.ChooseCategory').on('click', function () {
+
+            var dialog = $("#ChooseCategoryForm").dialog({
+                autoOpen: true,
+                position: { my: "center", at: "top+150", of: window },
+                width: 400  ,
+                resizable: false,
+                title: 'Choose Category Form',
+                modal: true,
+                open: function () {
+                    $(this).load('@Url.Action("_AllCategories", "Category",new { area="admin"})');
+                },
+                buttons: {
+                    "Sec": function () {
+                        chooseCategory(this);
+                    },
+                    Kapat: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            return false;
+        });
+
+        var chooseCategory = function (e) {
+            var selected = $('#ajax').jstree().get_selected(true)[0];
+
+            if (selected) {
+                $("#CatId").val(selected.id);
+                $("#CatName").val(selected.text);
+            }
+            $(e).dialog("close");
+        }
+
+
+
+     
+    </script>
+
+    <script type="text/javascript">
+
+              $.ajax({
+            url: '@Url.Action("GetProductTagData", "Product",new { productId = Model.Id,area=""})',
+            success: function (data) {
+                if (data.Tags) {
+                    var selectData = $.map(data.Tags, function (val) {
+                        var selected = "";
+                        if (val.Selected) {
+                            selected = "selected";
+                        }
+                        return { text: val.Name, id: val.Id, selected: selected };
+                    });
+                    $('#SelectedTags').select2({
+                        data: selectData,
+                        multiple: true,
+                        tags: true,
+                    });
+                }
+                
+             }
+        })
+    </script>
+
+    <script src="~/content/assets/demo/default/custom/components/forms/widgets/summernote.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Content").summernote();
+        });
+    </script>
+}

@@ -1,0 +1,75 @@
+﻿
+@model HaberlerProject.Models.ViewModel.UserVM
+@{
+    ViewBag.Title = "Kullanıcı Güncelle";
+
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-11">
+  
+    <div class="m-portlet m-portlet--tab">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                    </span>
+                    <h3 class="m-portlet__head-text">
+                        Yeni Kullanıcı Oluştur
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--begin::Form-->
+        @using (Html.BeginForm("UpdateUser", "Account", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+            @Html.HiddenFor(x => x.Id)
+            <div class="m-portlet__body">
+                <div class="form-group m-form__group">
+                    <label for="exampleInputEmail1">
+                        E-Posta Adresi
+                    </label>
+                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control m-input m-input--square", placeholder = "E-Posta Adresi Yazınız.", type = "email", disabled = "disabled" })
+
+                </div>
+                <div class="form-group m-form__group">
+                    <label for="exampleInputPassword1">
+                        Şifre
+                    </label>
+                    @Html.TextBoxFor(x => x.Password, new { @class = "form-control m-input m-input--square", placeholder = "Şifreyi güncellemek istemiyorsanız boş bırakınız.", type = "password" })
+                </div>
+                <div class="form-group m-form__group">
+                    <label for="exampleInputPassword1">
+                        Yetki
+                    </label>
+
+                    <select name="Role" class="form-control m-input m-input--square">
+                        <option value="">Yetki Seçiniz</option>
+                        <option value="Admin»FullYonetim" @(Model.Role == "Admin»FullYonetim" ? "selected" : "")>Admin</option>
+                        <option value="Admin»AltYonetici" @(Model.Role == "Admin»AltYonetici" ? "selected" : "")>AltYonetici</option>
+                     
+
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="m-portlet__foot m-portlet__foot--fit">
+                <div class="m-form__actions">
+                    <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                        Kaydet
+                    </button>
+                    <a href="/" class="btn btn-secondary">
+                        Vazgeç
+                    </a>
+                </div>
+            </div>
+
+        }
+        
+    </div>
+  
+</div>
+

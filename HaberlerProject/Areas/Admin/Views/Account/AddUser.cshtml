@@ -1,0 +1,73 @@
+﻿@model HaberlerProject.Models.ViewModel.UserVM
+@{
+    ViewBag.Title = "AddUser";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-11">
+   
+    <div class="m-portlet m-portlet--tab">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                    </span>
+                    <h3 class="m-portlet__head-text">
+                        Yeni Kullanıcı Oluştur
+                    </h3>
+                </div>
+            </div>
+        </div>
+      
+        @using (Html.BeginForm("AddUser", "Account", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            <div class="m-portlet__body">
+                <div class="form-group m-form__group">
+                    <label for="exampleInputEmail1">
+                        E-Posta Adresi
+                    </label>
+                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control m-input m-input--square", placeholder = "E-Posta Adresi Yazınız.", type = "email", required = "required" })
+
+
+                </div>
+                <div class="form-group m-form__group">
+                    <label for="exampleInputPassword1">
+                        Şifre
+                    </label>
+                    @Html.TextBoxFor(x => x.Password, new { @class = "form-control m-input m-input--square", placeholder = "Şifre Belirleyiniz.", type = "password", required = "required" })
+
+                </div>
+                <div class="form-group m-form__group">
+                    <label for="exampleInputPassword1">
+                        Yetki
+                    </label>
+
+                    <select name="Role" class="form-control m-input m-input--square">
+                        <option value="">Yetki Seçiniz</option>
+                        <option value="Admin»FullYonetim">Admin</option>
+                        <option value="Admin»AltYonetici">AltYonetici</option>
+                        
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="m-portlet__foot m-portlet__foot--fit">
+                <div class="m-form__actions">
+                    <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                        Kaydet
+                    </button>
+                    <a href="/Account/UserList" class="btn btn-secondary">
+                        Vazgeç
+                    </a>
+                </div>
+            </div>
+
+        }
+  
+    </div>
+   
+</div>

@@ -1,0 +1,158 @@
+﻿
+@model HaberlerProject.Models.ViewModel.CategoryVM
+@{
+    ViewBag.Title = "Kategori Ekle";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+}
+<div class="col-md-11">
+    <!--begin::Portlet-->
+    <div class="m-portlet m-portlet--tab">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                    </span>
+                    <h3 class="m-portlet__head-text">
+                        Kategori Düzenle
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--begin::Form-->
+        @using (Html.BeginForm("Edit", "Category", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="m-portlet__body">
+            <div class="form-group m-form__group">
+
+                @Html.HiddenFor(model => model.MainId)
+
+                <input class="form-control" type="text" name="MainName" id="MainName" value="@Model.MainName" style="width:95%;float: left;" disabled />
+
+                <input type="button" class="btn btn-warning ChooseCategory" value="Q" />
+                @Html.ValidationMessageFor(model => model.MainName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Name">
+                    Adı
+                </label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control m-input m-input--square", required = "required" })
+
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Description">
+                    Açıklama
+                </label>
+                @Html.TextBoxFor(x => x.Description, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    İçerik
+                </label>
+                @Html.TextBoxFor(x => x.Content, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Seo Başlık
+                </label>
+                @Html.TextBoxFor(x => x.SeoTitle, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+                <label for="Content">
+                    Seo Açıklama
+                </label>
+                @Html.TextBoxFor(x => x.SeoDesc, new { @class = "form-control m-input m-input--square", required = "required" })
+
+            </div>
+            <div class="form-group m-form__group">
+
+                @Html.EditorFor(x => x.IsActive, new { @class = "form-control m-input m-input--square" })
+                <label for="IsActive">
+                    Aktiflik
+                </label>
+            </div>
+            <div class="form-group m-form__group">
+
+                @Html.EditorFor(x => x.IsmenuActive, new { @class = "form-control m-input m-input--square" })
+                <label for="IsmenuActive">
+                    Menu Aktiflik
+                </label>
+            </div>
+            <div class="form-group m-form__group">
+                <label for="RowNumber">
+                    Sıra No
+                </label>
+                @Html.TextBoxFor(x => x.RowNumber, new { @class = "form-control m-input m-input--square", type = "number" })
+
+            </div>
+        </div>
+            <div class="m-portlet__foot m-portlet__foot--fit">
+                <div class="m-form__actions">
+                    <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                        Kaydet
+                    </button>
+                    <a href="/Admin/Category/Index" class="btn btn-secondary">
+                        Vazgeç
+                    </a>
+                </div>
+            </div>
+
+        }
+        <div id="ChooseCategoryForm"></div>  <!--end::Form-->
+    </div>
+    <!--end::Portlet-->
+</div>
+
+@section scripts{
+    @*<script src="@Url.Content("/content/admin/ckeditor/ckeditor.js")"></script>
+        <script src="@Url.Content("/content/admin/ckeditor/CustomCKEditor.js")"></script>*@
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+
+
+        $('.ChooseCategory').on('click', function () {
+
+            var dialog = $("#ChooseCategoryForm").dialog({
+                autoOpen: true,
+                position: { my: "center", at: "top+150", of: window },
+                width: 400  ,
+                resizable: false,
+                title: 'Choose Category Form',
+                modal: true,
+                open: function () {
+                    $(this).load('@Url.Action("_AllCategories", "Category",new { area="admin"})');
+                },
+                buttons: {
+                    "Sec": function () {
+                        chooseCategory(this);
+                    },
+                    Kapat: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            return false;
+        });
+
+        var chooseCategory = function (e) {
+            var selected = $('#ajax').jstree().get_selected(true)[0];
+
+            if (selected) {
+                $("#MainId").val(selected.id);
+                $("#MainName").val(selected.text);
+            }
+            $(e).dialog("close");
+        }
+    </script>
+}

@@ -1,0 +1,21 @@
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\DAL.dll.config
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\DAL.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\DAL.pdb
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\obj\Debug\DAL.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\DAL\obj\Debug\DAL.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\DAL.dll.config
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\DAL.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\DAL.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\obj\Debug\DAL.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,78 @@
+﻿@*slider*@
+
+
+@{
+    Html.RenderAction("_slider", "Partial");
+
+}
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+
+
+                    @{
+                        Html.RenderAction("_gundem", "Partial");
+
+                    }
+                
+                         @*ADMİN GİRİŞİ 
+
+                    yunusarslan.1997@gmail.com
+
+                    şifr: yunusarsan1997*@
+
+
+
+                    @{
+                        Html.RenderAction("_ekonomi", "Partial");
+
+                    }
+
+                </div>
+
+                <div class="row">
+                    @{
+                        Html.RenderAction("_saglik", "Partial");
+
+                    }
+
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="widget center-block hidden-xs">
+                    <img class="center-block" src="~/HABER/img/imagesss.jpg" alt="">
+                </div>
+                <div class="widget social-widget">
+                    <div class="widget-title">
+                        <h2 class="title">TAKİPTE KALIN</h2>
+                    </div>
+                    <ul>
+                        <li><a href="/#" class="facebook"><i class="fa fa-facebook"></i><br><span>Facebook</span></a></li>
+                        <li><a href="/#" class="twitter"><i class="fa fa-twitter"></i><br><span>Twitter</span></a></li>
+                        <li><a href="/#" class="google"><i class="fa fa-google"></i><br><span>Google+</span></a></li>
+                        <li><a href="/#" class="instagram"><i class="fa fa-instagram"></i><br><span>Instagram</span></a></li>
+                        <li><a href="/#" class="youtube"><i class="fa fa-youtube"></i><br><span>Youtube</span></a></li>
+                        <li><a href="/#" class="rss"><i class="fa fa-rss"></i><br><span>RSS</span></a></li>
+                    </ul>
+                </div>
+
+                @{
+                    Html.RenderAction("_ensoneklenen", "Partial");
+
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+

@@ -1,0 +1,40 @@
+﻿@model List<HaberlerProject.Models.ViewModel.ProductVM>
+
+
+    <div id="ekonomi" class="col-md-6 col-sm-6">
+        <!-- section title -->
+        <div class="section-title">
+            <h2 class="title">EKONOMİ</h2>
+        </div>
+
+        @{
+            foreach (var item in Model)
+            {
+
+                <article class="article widget-article">
+                    <div class="article-img">
+                                <a href="/Home/Details/@item.Id">
+
+                                   
+                                    <img src="@item.ListImageUrl" alt="">
+                                </a>
+                    </div>
+                    <div class="article-body">
+                        <h4 class="article-title"><a href="/Home/Details/@item.Id">@item.Name</a></h4>
+                        <ul class="article-meta">
+                            <li><i class="fa fa-clock-o"></i> @item.CreateDate</li>
+                        </ul>
+                        <p>@item.Description</p>
+                    </div>
+                </article>
+
+
+
+            }
+        }
+
+
+
+    </div>
+
+    

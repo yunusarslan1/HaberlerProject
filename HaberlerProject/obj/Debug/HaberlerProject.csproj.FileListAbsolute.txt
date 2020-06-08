@@ -1,0 +1,132 @@
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\ApplicationInsights.config
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\HaberlerProject.dll.config
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\HaberlerProject.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\HaberlerProject.pdb
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Antlr3.Runtime.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\DAL.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\EntityFramework.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\EntityFramework.SqlServer.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Web.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Newtonsoft.Json.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Owin.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Helpers.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Mvc.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Optimization.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Razor.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Razor.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\WebGrease.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\DAL.pdb
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\DAL.dll.config
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\EntityFramework.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\EntityFramework.SqlServer.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Helpers.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Mvc.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Optimization.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.Razor.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Razor.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Antlr3.Runtime.pdb
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Newtonsoft.Json.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Web.xml
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.csprojResolveAssemblyReference.cache
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.csproj.CoreCompileInputs.cache
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.dll
+C:\Users\Toshiba\Documents\Visual Studio 2017\Projects\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\ApplicationInsights.config
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\HaberlerProject.dll.config
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\HaberlerProject.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\HaberlerProject.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Antlr3.Runtime.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\DAL.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\EntityFramework.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\EntityFramework.SqlServer.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Web.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Newtonsoft.Json.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Owin.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Helpers.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Mvc.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Optimization.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Razor.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\WebGrease.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\DAL.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\DAL.dll.config
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\EntityFramework.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\EntityFramework.SqlServer.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Helpers.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Mvc.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Optimization.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.Razor.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Antlr3.Runtime.pdb
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Newtonsoft.Json.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\bin\Microsoft.AI.Web.xml
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.csprojAssemblyReference.cache
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.csproj.CopyComplete
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.dll
+C:\Users\Yunus\Desktop\haber\HaberlerProject\HaberlerProject\HaberlerProject\obj\Debug\HaberlerProject.pdb

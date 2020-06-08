@@ -1,0 +1,89 @@
+﻿@model IEnumerable<HaberlerProject.Models.ViewModel.ProductVM>
+
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="article article-post">
+                    <div class="article-share">
+                        <a href="/#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="/#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="/#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+
+                    @{
+
+                        foreach (var item in Model)
+                        {
+                            <div class="article-main-img">
+                                <img src="@item.ListImageUrl" alt="@item.Name">
+                            </div>
+                            <div class="article-body">
+                                <ul class="article-info">
+                                    <li class="article-category"></li>
+                                    <li class="article-type"><i class="fa fa-file-text"></i></li>
+                                </ul>
+                                <h1 class="article-title"><a>@item.Name</a></h1>
+                                <ul class="article-meta">
+                                    <li><i class="fa fa-clock-o"></i> @item.CreateDate</li>
+                                </ul>
+                                <p>@item.Description</p>
+
+                            </div>
+                        }
+                    }
+
+
+
+
+
+
+                </article>
+                <div class="widget-tags">
+                    <ul>
+                        <li><a href="/#owl-carousel-1">Son Dakika</a></li>
+                        <li><a href="/#gundem">Gündem</a></li>
+                        <li><a href="/#ekonomi">Ekonomi</a></li>
+                        <li><a href="/#saglık">Sağlık</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widget center-block hidden-xs">
+                    <img class="center-block" src="~/HABER/img/imagesss.jpg" alt="">
+                </div>
+                <div class="widget social-widget">
+                    <div class="widget-title">
+                        <h2 class="title">TAKİPTE KALIN</h2>
+                    </div>
+                    <ul>
+                        <li><a href="/#" class="facebook"><i class="fa fa-facebook"></i><br><span>Facebook</span></a></li>
+                        <li><a href="/#" class="twitter"><i class="fa fa-twitter"></i><br><span>Twitter</span></a></li>
+                        <li><a href="/#" class="google"><i class="fa fa-google"></i><br><span>Google+</span></a></li>
+                        <li><a href="/#" class="instagram"><i class="fa fa-instagram"></i><br><span>Instagram</span></a></li>
+                        <li><a href="/#" class="youtube"><i class="fa fa-youtube"></i><br><span>Youtube</span></a></li>
+                        <li><a href="/#" class="rss"><i class="fa fa-rss"></i><br><span>RSS</span></a></li>
+                    </ul>
+                </div>
+                @{
+                    Html.RenderAction("_ensoneklenen", "Partial");
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,171 @@
+﻿
+@model  List<DAL.Category>
+@{
+    ViewBag.Title = "Kategory Listesi";
+
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+
+    .changeIsActive:hover {
+        cursor: pointer;
+    }
+</style>
+<div class="m-portlet m-portlet--mobile">
+    <div class="m-portlet__body">
+        <!--begin: Search Form -->
+        <div class="m-form m-form--label-align-right m--margin-bottom-10">
+            <div class="row align-items-center">
+                <div class="col-xl-8 order-2 order-xl-1">
+                    <div class="form-group m-form__group row align-items-center">
+                        <div class="col-md-4">
+                            <div class="m-input-icon m-input-icon--left">
+                                <input type="text" class="form-control m-input" placeholder="Search..." id="generalSearch">
+                                <span class="m-input-icon__icon m-input-icon__icon--left">
+                                    <span>
+                                        <i class="la la-search"></i>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 order-1 order-xl-2 m--align-right">
+                    <a href="@Url.Action("Create","Category")" class="btn btn-primary m-btn m-btn--custom">
+                        Yeni Kategori Ekle
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--end: Search Form -->
+        <!--begin: Datatable -->
+        <table class="m-datatable" id="html_table">
+            <thead>
+                <tr>
+                    <th>Sıra No</th>
+                    <th>
+                        Adı
+                    </th>
+                    <th>
+                        Aktiflik
+                    </th>
+                    <th>
+                        Sıra No
+                    </th>
+                    <th>
+                        İşlemler
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Where(x => x.Id != 1))
+                {
+
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            @item.IsActive
+                        </td>
+                        <td>
+                            @item.RowNumber
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit","Category",new {id=item.Id })" class="btn btn-accent">
+                                Düzenle
+                            </a>
+                            <a class="btn btn-danger" data-toggle="modal" data-target="#m_modal_3" onclick="return modalSetData('@item.Name','@item.Id');">
+                                Sil
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!--end: Datatable -->
+    </div>
+</div>
+<!--begin::Modal-->
+<div class="m-portlet">
+    <div class="modal fade" id="m_modal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p id="exampleModalLabel">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Vazgeç
+                    </button>
+                    @using (Html.BeginForm("Delete", "Category", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" id="deleteButton" name="deletedId" />
+                        <button type="submit" class="btn btn-success m-btn m-btn--custom">
+                            Sil
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end::Modal-->
+@section scripts{
+    <script src="~/content/assets/demo/default/custom/components/datatables/base/html-table.js" type="text/javascript"></script>
+    <script>
+        var _lockIsActive = null;
+        var modalSetData = function (name, id) {
+            $("#exampleModalLabel").html('"'+name + '" adlı kategoriyi silmek istiyor musunuz?.');
+            $("#deleteButton").val(id);
+        }
+
+        $(document).ready(function () {
+
+            $(".changeIsActive").on("click", function () {
+                if (_lockIsActive) return;
+                _lockIsActive = this;
+                var $this = $(this);
+                var id = $this.data("id");
+                var status = $this.data("isactive");
+                var name = $this.data("name");
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("ChangeStatus", "Branch")',
+                    data: { id: id, status: status },
+                    success: function (data) {
+                        $this.data("isactive", data?"True":"False");
+                        if (data == true) {
+                            $this.removeClass("m-badge--danger");
+                            $this.addClass("m-badge--success");
+                            $this.html("Aktif");
+                            infoNotify(name, "Aktif duruma getirildi");
+                        }
+                        else {
+                            $this.removeClass("m-badge--success");
+                            $this.addClass("m-badge--danger");
+                            $this.html("Pasif");
+                            infoNotify(name, "Pasif duruma getirildi");
+                        }
+
+                    },
+                    error: function () {
+                        errorNotify(name, "Güncelleme sırasında hata oluştu");
+                    },
+                    complete: function () {
+                        _lockIsActive= null;
+                    }
+                });
+            });
+
+
+        });
+
+
+    </script>
+}
+
+
